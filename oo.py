@@ -6,13 +6,20 @@
    can provide? Explain each concept.
 
    encapsulation: 
-    The internal representation of an object is generally hidden from view outside of the object's definition
-    A class is an example of encapsulation as it encapsulates all the data that is member functions,variables
-  
+    you can restrict access to methods and variables. This can prevent the data from being modified by accident and is known as encapsulation
+   
    inheritance:
+     We can make a Cat class that inherits from Animal:
 
   
    polymorphism:
+     Flexibility of types without conditionals.
+     polymorphism means same function name (but different signatures) being uses for different types.
+      len() being used for a string 
+        print(len("geeks")) 
+  
+         # len() being used for a list 
+         print(len([10, 20, 30])) 
 
 2. What is a class?
     A class is an object constructor for creating objects. It is like a blueprint for creating objects.
@@ -27,7 +34,7 @@
    Give an example of when you might use each.
 
    class attributes are shared among all instances that were created using the class.
-   an instance attribute can be specific to the instance and not share with other instances
+   an instance attribute can be specific to the instance and not be shared with other instances
 
 """
 
@@ -102,8 +109,8 @@ class Library(object):
         return author_books
 
 lib = Library()
-lib.add_book('GOT', 'Usman')
-lib.add_book('Node js', 'Usman')
+lib.add_book('GOT', 'dodo')
+lib.add_book('Node js', 'dodo')
 
-print(lib.find_books_by_author('Usman'))
+print(lib.find_books_by_author('dodo'))
 
